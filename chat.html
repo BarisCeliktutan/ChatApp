@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" action="db.php">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +8,16 @@
     </head>
 
     <header>
-        
         <h1>Chatting</h1>
-        <button class="go-back">🔙</button>
-
     </header>
 
     <body>
+        <div class="header_cont">
+            <p>User Name:</p>
+            <input class="user_name_ent" type="text">
+            <button class="go-back">🔙</button>
+        </div>
+
         <main class="container">
             <div class="texts">
                 <!-- <p class="user1 text">User1</p>
@@ -30,9 +33,11 @@
                 
             </footer>
         </main>
-        
+
 
     </body>
 
     <script src="chat_main.js"></script>
+    <script src="db_connection.js"></script>
+
 </html>
